@@ -1,0 +1,948 @@
+{
+  "meta": {
+    "title": "Divya Bhatia · Equilibrium",
+    "description": "Divya Bhatia studies how chemistry, biology and engineering meet the communities they serve, from ocean alkalinity enhancement to the history of Partition.",
+    "url": "https://divyab1130.github.io/",
+    "ogImage": "https://divyab1130.github.io/assets/og-image.png",
+    "hideTodos": false
+  },
+  "person": {
+    "name": "Divya Bhatia",
+    "photo": "",
+    "photoAlt": "Portrait of Divya Bhatia",
+    "school": "St. Andrew's School, Delaware · Class of 2027",
+    "interests": "Chemical & biological engineering",
+    "thesis": "I study how matter moves: carbon into seawater, roots into mud, ideas into communities. And I study who is changed when it does.",
+    "lede": "A high-school researcher working where chemistry, biology and engineering meet the people they affect. Scroll down: like an ocean receiving alkalinity, the page shifts as each piece is added."
+  },
+  "domains": [
+    {
+      "id": "chem",
+      "label": "Chemistry",
+      "symbol": "Ch",
+      "ph": 2
+    },
+    {
+      "id": "bio",
+      "label": "Biology",
+      "symbol": "Bi",
+      "ph": 6
+    },
+    {
+      "id": "eng",
+      "label": "Engineering & Code",
+      "symbol": "En",
+      "ph": 9.5
+    },
+    {
+      "id": "comm",
+      "label": "Community & History",
+      "symbol": "Cm",
+      "ph": 12.5
+    }
+  ],
+  "projects": [
+    {
+      "id": "oae",
+      "title": "Ocean Alkalinity Enhancement",
+      "short": "Ocean alkalinity",
+      "kicker": "Research synthesis",
+      "date": "July 2026",
+      "setting": "Harvard Pre-College Program · The Chemistry of a Human Earth",
+      "collaborators": "with Una · course instructor Ruth Tweedy",
+      "domains": [
+        "chem",
+        "eng",
+        "comm"
+      ],
+      "status": [
+        {
+          "label": "SCCUR 2026",
+          "state": "abstract submitted"
+        },
+        {
+          "label": "IYRC Winter 2026",
+          "state": "submission in progress"
+        }
+      ],
+      "question": "Can adding alkalinity to seawater safely pull carbon dioxide out of the air, and can anyone prove that it worked?",
+      "method": "With Una, synthesized the current literature: the carbonate chemistry (how added base shifts the CO₂ ⇌ HCO₃⁻ ⇌ CO₃²⁻ equilibrium and lowers seawater pCO₂), geological analogues such as silicate weathering and the recovery after the PETM, three delivery routes (mineral dispersal, electrochemical splitting, alkaline industrial waste), the first permitted field trials, monitoring technology, and cost and scale estimates.",
+      "result": "The chemistry is well understood, but measurement is the bottleneck. Total-alkalinity sensors are not yet reliably available, so trials depend on robots and models to follow a plume through open water. In the sources reviewed, about 730 tonnes of CO₂ removal had been verified worldwide, against a theoretical potential of billions of tonnes per year. Costs were roughly $250–850 per tonne, with projections of $50–160.",
+      "impact": "Coastal ecosystems and the people who depend on them carry the local risks of a pH shift. Honest monitoring is what makes the approach fair, not just effective.",
+      "links": [],
+      "demo": "equilibrium",
+      "documents": [
+        "oae-deck"
+      ]
+    },
+    {
+      "id": "cattails",
+      "title": "Why Cattails Stop at the Shoreline",
+      "short": "Cattails",
+      "kicker": "Field study",
+      "date": "April–May 2024",
+      "setting": "Curiosity Quest Night",
+      "collaborators": "with Josephine",
+      "domains": [
+        "bio",
+        "eng"
+      ],
+      "status": [
+        {
+          "label": "Curiosity Quest Night",
+          "state": "winner, May 2024"
+        }
+      ],
+      "question": "Cattails crowd the edges of the retention pond but never reach the middle. Why?",
+      "method": "Tested depth first: measured 80–106 cm at cattail sites and compared against peers' bathymetric map of the pond. Depth did not explain the pattern. Then designed a probe (after rejecting prototypes that were too flexible or too blunt) and recorded the force needed to push it into the pond bottom across four zones, coding readings below 40 N, 40–50 N, and 50 N or more.",
+      "result": "Cattails grew where the bottom was soft and mucky, and depth was ruled out. The project won Curiosity Quest Night in May 2024. The next open question: why are the near-shore zones soft in the first place?",
+      "impact": "Retention ponds exist to slow and clean stormwater for the neighborhoods around them. Knowing where wetland plants can take root helps the people who design and care for these ponds.",
+      "links": []
+    },
+    {
+      "id": "greenhouse",
+      "title": "Pick a Side: The Greenhouse Effect",
+      "short": "Pick a Side",
+      "kicker": "Interactive lesson",
+      "date": "July 2026",
+      "setting": "Harvard Pre-College Program · The Chemistry of a Human Earth",
+      "collaborators": "with Camila",
+      "domains": [
+        "chem",
+        "comm"
+      ],
+      "status": [],
+      "question": "Can making classmates choose between a fact and a convincing misconception help them actually unlearn the misconception?",
+      "method": "Built paired claims, one accurate and one a common misconception, on the questions people most often get wrong: Earth's temperature without the greenhouse effect, whether gases trap sunlight or outgoing heat, the most abundant greenhouse gas, why industry switched from wood to coal, and why CO₂ outlasts methane. Each answer was backed by a cited source such as NASA or NCSE.",
+      "result": "A ready-to-run class activity. Try a few of the questions in the Curiosities section below.",
+      "impact": "Climate decisions are made by the public, not just by scientists. Clearing up one misconception at a time is part of the work.",
+      "links": [
+        {
+          "label": "Play it below",
+          "href": "#curiosities"
+        }
+      ],
+      "documents": [
+        "greenhouse-deck"
+      ]
+    },
+    {
+      "id": "northstar",
+      "title": "NorthStar*",
+      "short": "NorthStar*",
+      "kicker": "AI travel-guide chatbot",
+      "date": "Summer 2026",
+      "setting": "Kode With Klossy · AI & Machine Learning capstone",
+      "collaborators": "with Samyutha, Tobi and Vishruti",
+      "domains": [
+        "eng"
+      ],
+      "status": [],
+      "question": "Can an AI guide recommend real places to eat and things to do in any city, without making places up?",
+      "method": "Built a Gradio chatbot on Hugging Face using retrieval-augmented generation (RAG). A large language model (Qwen 2.5, 7B) first turns a casual message into structured preferences: city, price, meal, food or activities, and whether the user wants more options. The app then pulls live places from the Foursquare Places API, caches results to avoid repeat calls, and falls back to a saved Yelp dataset when live data is unavailable. Only those retrieved places are handed back to the model to write the reply, five at a time.",
+      "result": "A deployed, streaming chatbot that remembers the city and request across a conversation and pages through new options on request. When it has no data, it says so instead of guessing.",
+      "impact": "Chatbots that invent restaurants can send someone across an unfamiliar city for nothing. Grounding every answer in real data, and admitting when there is none, is what makes a recommendation trustworthy.",
+      "links": [
+        {
+          "label": "Try it on Hugging Face",
+          "href": "https://huggingface.co/spaces/kode-with-klossy/4.3-groupC4-capstone"
+        }
+      ]
+    },
+    {
+      "id": "hearinghand",
+      "title": "Hearing Hand",
+      "short": "Hearing Hand",
+      "kicker": "iOS app",
+      "date": "Summer 2024",
+      "setting": "Kode With Klossy · Mobile App Development",
+      "collaborators": "built with a team of Kode With Klossy classmates",
+      "domains": [
+        "eng",
+        "comm"
+      ],
+      "status": [],
+      "question": "Could learning American Sign Language feel as motivating as a language app, while teaching the culture behind the language and not just the signs?",
+      "method": "Designed and built a SwiftUI app in Xcode with the team. It has lessons on the alphabet and basic words, two quiz tracks (fingerspelling and everyday words), and a motivation system of streaks, gems and hearts. Deaf culture lessons on history, values and cultural behaviors sit alongside the vocabulary.",
+      "result": "A working iOS prototype in which culture lessons are part of the main path, not an appendix.",
+      "impact": "It treats Deaf culture as a culture, so learners meet its history, values and etiquette in the same place they learn the alphabet.",
+      "links": []
+    },
+    {
+      "id": "period5",
+      "title": "Period 5",
+      "short": "Period 5",
+      "kicker": "Website",
+      "date": "Summer 2023",
+      "setting": "Kode With Klossy · Website Development",
+      "collaborators": "with Audrey, Marine and a third teammate",
+      "domains": [
+        "eng",
+        "bio",
+        "comm"
+      ],
+      "status": [],
+      "question": "Many young people who menstruate get little or no real education about their cycles. How do you give curious youth clear, friendly information they can actually use?",
+      "method": "Co-developed a website in HTML, CSS and JavaScript with fun facts about the menstrual cycle, trusted resources, and step-by-step instructions for using different period products.",
+      "result": "A working website, pitched to the rest of the Kode With Klossy scholars at the end of the program.",
+      "impact": "Menstrual health is often taught late, briefly, or not at all. Plain, judgment-free information helps young people understand their own bodies without embarrassment.",
+      "links": []
+    },
+    {
+      "id": "partition",
+      "title": "The Planned Partition",
+      "short": "Planned Partition",
+      "kicker": "Research paper",
+      "date": "May 2026",
+      "setting": "AS Research Seminar",
+      "collaborators": "independent paper",
+      "domains": [
+        "comm"
+      ],
+      "status": [],
+      "question": "How did British policy in Punjab, from 1858 to 1947, turn a diverse population that had resisted together in 1857 into rigid political communities, and how did that contribute to the violence of 1947?",
+      "method": "Traced the argument through primary sources: the 573-page 1881 Census of Panjab, the Indian Councils Act of 1909, Mountbatten's June 1947 broadcast, 1947 newspaper reports of the train massacres, and the Stanford 1947 Partition oral-history archive. These were read alongside secondary historians.",
+      "result": "Argues that the census did not just record caste and religion, but fixed them into countable, comparable categories. Those categories later structured religious representation in government, making separation administrable long before it was violent.",
+      "impact": "Partition displaced millions and its divisions still shape South Asia. Understanding how categories become borders helps people resist the same process now.",
+      "links": [],
+      "documents": [
+        "partition-paper"
+      ]
+    },
+    {
+      "id": "sasmun",
+      "title": "A Race Against Time: Partition of India, 1947",
+      "short": "SASMUN crisis",
+      "kicker": "Crisis committee & background guide",
+      "date": "SASMUN VIII · November 2025",
+      "setting": "St. Andrew's Model United Nations",
+      "collaborators": "Chair; dais with a vice-chair and crisis director",
+      "domains": [
+        "comm"
+      ],
+      "status": [],
+      "question": "How do you let delegates feel the pressure of 1947 (collapsing authority, border uncertainty, rising violence) without already knowing how it ends?",
+      "method": "Wrote the background guide covering the crisis, the historical context, member descriptions and committee goals. Then chaired the crisis committee, in which delegates had no knowledge of how events actually unfolded.",
+      "result": "A full crisis committee of about 15 delegates, run as part of a progression from Vice Chair to Chair to Crisis Director.",
+      "impact": "Delegates practiced the empathy and judgment the guide asks for: historical curiosity, applied to a real human toll.",
+      "links": [],
+      "documents": [
+        "sasmun-guide"
+      ]
+    },
+    {
+      "id": "accent",
+      "title": "Accent Magazine",
+      "short": "Accent magazine",
+      "kicker": "Editor-in-Chief, Issues 04 & 05",
+      "date": "2024–2026",
+      "setting": "Asian Student Union, St. Andrew's School",
+      "collaborators": "with fellow ASU co-heads; 19 student contributors in Issue 04, 11 in Issue 05",
+      "domains": [
+        "comm"
+      ],
+      "status": [],
+      "question": "What does it mean to be Asian in 21st-century America, told by the students living it?",
+      "method": "Created, edited and designed two editions of the ASU art and literary magazine, collecting student art, poetry and personal writing. Also contributed a poem, “Unboxed.”",
+      "result": "Two published editions (2024–25 and 2025–26). Alongside the magazine, ASU raised $500 for relief efforts after anti-Asian violence.",
+      "impact": "In the magazine's own words: “By sharing our voices, we become more resilient and powerful.”",
+      "links": [],
+      "documents": [
+        "accent-04",
+        "accent-05"
+      ]
+    }
+  ],
+  "archive": {
+    "intro": "Two timelines, kept side by side because they inform each other: the history Divya studies, and the community she helps build.",
+    "history": [
+      {
+        "year": "1857",
+        "title": "The Indian Rebellion",
+        "text": "Hindu and Muslim soldiers rose against East India Company rule together, a unity the British would work to prevent from happening again."
+      },
+      {
+        "year": "1881",
+        "title": "Census of Panjab",
+        "text": "The first synchronous census sorted every person by caste, religion and region, turning identities into fixed numbers."
+      },
+      {
+        "year": "1909",
+        "title": "Indian Councils Act",
+        "text": "Expanded Indian participation in councils, but under rules that wrote religious division into representation."
+      },
+      {
+        "year": "1947",
+        "title": "Partition",
+        "text": "Two nations were born on August 15. Months of violence followed, including the train massacres across the new border."
+      }
+    ],
+    "community": [
+      {
+        "year": "2023–",
+        "title": "Model United Nations",
+        "text": "Rose from Vice Chair to Chair to Crisis Director. Attended NAIMUN twice."
+      },
+      {
+        "year": "2024–",
+        "title": "Asian Student Union, co-head",
+        "text": "Co-led for three years: cultural events, discussions and a $500 fundraiser for relief after anti-Asian violence."
+      },
+      {
+        "year": "2025",
+        "title": "Accent, Issue 04",
+        "text": "Editor-in-Chief and designer of the fourth edition."
+      },
+      {
+        "year": "2023–",
+        "title": "Student Diversity Committee, senior leader & co-head",
+        "text": "Planned speakers, films and cultural fairs with the Dean of Inclusion. Attended three DEI conferences and co-facilitated a workshop on book censorship."
+      },
+      {
+        "year": "2023–",
+        "title": "Youth mentoring",
+        "text": "Three years mentoring 20–25 elementary students with special needs through recess and activities."
+      },
+      {
+        "year": "2026",
+        "title": "Accent, Issue 05",
+        "text": "Second edition as Editor-in-Chief."
+      },
+      {
+        "year": "2026",
+        "title": "“The Planned Partition”",
+        "text": "Research paper linking the 1881 census to the violence of 1947, the history thread in her own work."
+      }
+    ]
+  },
+  "elements": [
+    {
+      "symbol": "Hv",
+      "name": "Harvard Pre-College",
+      "year": "2026",
+      "group": "program",
+      "detail": "Chemistry track: The Chemistry of a Human Earth (CHEM P-13010), a two-week course on pollution, climate and the chemistry of sustainable solutions.",
+      "details": [
+        "A two-week college-level course (CHEM P-13010, July 20–31, 2026) that builds from first principles of chemistry to the largest environmental questions of the day: ocean acidification, carbon dioxide release, microplastics, and the chemistry of sustainable solutions. Each class applied chemistry to a different real-world case study.",
+        "Two projects came out of it: a final research synthesis on ocean alkalinity enhancement with Una, and *Pick a Side*, an interactive greenhouse-effect lesson with Camila."
+      ],
+      "impact": "Researching ocean carbon removal and the company Ebb Carbon turned a general interest in chemistry into a specific direction: climate, ocean science, and the chemistry of carbon removal.",
+      "related": [
+        "oae",
+        "greenhouse"
+      ],
+      "media": [
+        {
+          "src": "assets/media/harvard-oae-title.webp",
+          "alt": "Title slide of the presentation “Ocean Alkalinity Enhancement” by Una and Divya",
+          "caption": "Final presentation, with Una"
+        },
+        {
+          "src": "assets/media/greenhouse-title.webp",
+          "alt": "Title slide of “The Greenhouse Effect” by Divya and Camila",
+          "caption": "Second project, with Camila"
+        },
+        {
+          "src": "assets/media/greenhouse-pick.webp",
+          "alt": "A “Pick a Side” slide asking what Earth’s temperature would be without the greenhouse effect",
+          "caption": "A “Pick a Side” question slide"
+        }
+      ],
+      "documents": [
+        "oae-deck",
+        "greenhouse-deck"
+      ]
+    },
+    {
+      "symbol": "Sc",
+      "name": "SCCUR 2026",
+      "year": "2026",
+      "group": "publication",
+      "status": "submitted",
+      "detail": "Abstract on ocean alkalinity enhancement (with Una) submitted to the Southern California Conferences for Undergraduate Research.",
+      "details": [
+        "Abstract submitted to the Southern California Conferences for Undergraduate Research (SCCUR) 2026, based on the ocean alkalinity enhancement (OAE) synthesis with Una.",
+        "The work explains how adding alkalinity shifts seawater’s carbonate equilibrium so the ocean absorbs more CO₂. It also covers the first permitted field trials (Ebb Carbon and Woods Hole Oceanographic Institution) and why monitoring, reporting and verification is the field’s main bottleneck."
+      ],
+      "impact": "Carbon removal only counts if it can be verified. The abstract centers that question for an undergraduate research audience. Status: submitted, decision pending.",
+      "related": [
+        "oae"
+      ],
+      "media": [
+        {
+          "src": "assets/media/oae-chemistry.webp",
+          "alt": "Slide reviewing the chemistry: CO₂ forms an acid, alkalinity buffers acid, shifting equilibrium",
+          "caption": "The chemistry, in three steps"
+        },
+        {
+          "src": "assets/media/oae-monitoring.webp",
+          "alt": "Slide on monitoring technology: sensors, robots, prediction models and a shared database",
+          "caption": "Monitoring: the big challenge"
+        }
+      ],
+      "documents": [
+        "oae-deck"
+      ]
+    },
+    {
+      "symbol": "Iy",
+      "name": "IYRC Winter 2026",
+      "year": "2026",
+      "group": "publication",
+      "status": "in progress",
+      "detail": "Ocean alkalinity enhancement submission in progress for the International Young Researchers' Conference (IYRC), Winter 2026.",
+      "details": [
+        "Submission in progress for the International Young Researchers’ Conference (IYRC), Winter 2026, presenting the OAE synthesis with Una.",
+        "It sets the chemistry next to the economics. In the sources reviewed, removal cost about $250–850 per tonne of CO₂, with projections of $50–160, and only about 730 tonnes had been verified worldwide against a theoretical potential of billions of tonnes per year."
+      ],
+      "impact": "Whether OAE can matter for the climate depends as much on verification, cost and funding as on the reaction itself.",
+      "related": [
+        "oae"
+      ],
+      "media": [
+        {
+          "src": "assets/media/oae-cost-scale.webp",
+          "alt": "Slide comparing the current cost of ocean alkalinity enhancement with its potential scale",
+          "caption": "Cost and scale"
+        },
+        {
+          "src": "assets/media/oae-assessment.webp",
+          "alt": "Slide summarizing the National Academies assessment and key challenges for OAE",
+          "caption": "Official assessment and key challenges"
+        }
+      ],
+      "documents": [
+        "oae-deck"
+      ]
+    },
+    {
+      "symbol": "Pp",
+      "name": "The Planned Partition",
+      "year": "2026",
+      "group": "publication",
+      "detail": "AS Research Seminar paper on caste, religion and colonial policy in Punjab, 1858–1947.",
+      "details": [
+        "A 21-page AS Research Seminar paper (May 2026), including bibliography. It argues that after the 1857 rebellion, British policy in Punjab turned a diverse population into rigid political communities.",
+        "Its central primary source is the 573-page 1881 Census of Panjab, read alongside the Indian Councils Act of 1909, Mountbatten’s June 1947 broadcast, 1947 newspaper reports of the train massacres, and oral histories from Stanford’s 1947 Partition archive."
+      ],
+      "impact": "It shows how counting people can become dividing them, a question that reaches well beyond 1947.",
+      "related": [
+        "partition"
+      ],
+      "media": [
+        {
+          "src": "assets/media/partition-title.webp",
+          "alt": "Title page: The Planned Partition: Caste and Religion in a Divided Punjab, 1858–1947",
+          "caption": "Title page"
+        },
+        {
+          "src": "assets/media/partition-census.webp",
+          "alt": "A table from the 1881 Census of Panjab sorting the population by religion and district",
+          "caption": "Primary source: the 1881 Census of Panjab"
+        }
+      ],
+      "documents": [
+        "partition-paper"
+      ]
+    },
+    {
+      "symbol": "Bg",
+      "name": "SASMUN VIII guide",
+      "year": "2025",
+      "group": "publication",
+      "detail": "Author and chair: background guide for the Partition of India (1947) crisis committee, SASMUN VIII, November 2025.",
+      "details": [
+        "Background guide for *A Race Against Time: The Partition of India (1947)*, a crisis committee at SASMUN VIII in November 2025, which Divya also chaired.",
+        "The guide covers the crisis, its historical context, member descriptions, committee goals and works consulted. Delegates begin in mid-1947 with no knowledge of how events unfolded, and face assassinations, uprisings and press leaks as communal violence spreads and borders remain uncertain."
+      ],
+      "impact": "History becomes a set of decisions. Delegates feel the pressure leaders faced and the human toll of a hurried independence.",
+      "related": [
+        "sasmun"
+      ],
+      "media": [
+        {
+          "src": "assets/media/sasmun-guide.webp",
+          "alt": "Title and table of contents of the SASMUN VIII background guide on the Partition of India",
+          "caption": "Background guide: title and contents"
+        }
+      ],
+      "documents": [
+        "sasmun-guide"
+      ]
+    },
+    {
+      "symbol": "Ac",
+      "isotope": "04",
+      "name": "Accent, Issue 04",
+      "year": "2025",
+      "group": "publication",
+      "detail": "Editor-in-Chief and designer, Asian Student Union art and literary magazine.",
+      "details": [
+        "Editor-in-Chief and designer of the fourth edition (2024–25) of *Accent*, the Asian Student Union’s art and literary magazine, with work from 19 student contributors: poetry, chapel talks, photography and art.",
+        "That year Divya was also an ASU co-head, helping run events from the ramen function to *Crazy Rich Asians*, and contributed her own poem, “Unboxed.”"
+      ],
+      "impact": "In the magazine’s own words, *Accent* “tells the stories of Asians and Asian Americans living in the United States,” giving students a place to put their identities in their own words.",
+      "related": [
+        "accent"
+      ],
+      "media": [
+        {
+          "src": "assets/media/accent04-cover.webp",
+          "alt": "Cover of Accent, Issue 04, 2024–2025",
+          "caption": "Cover, Issue 04"
+        },
+        {
+          "src": "assets/media/accent04-masthead.webp",
+          "alt": "Masthead listing Divya Bhatia as Editor-in-Chief and the contributors",
+          "caption": "Masthead"
+        },
+        {
+          "src": "assets/media/accent04-letter.webp",
+          "alt": "Letter from the heads, written by Divya as Co-Head and Editor-in-Chief",
+          "caption": "Letter from the heads"
+        }
+      ],
+      "documents": [
+        "accent-04"
+      ]
+    },
+    {
+      "symbol": "Ac",
+      "isotope": "05",
+      "name": "Accent, Issue 05",
+      "year": "2026",
+      "group": "publication",
+      "detail": "Editor-in-Chief and designer, second edition.",
+      "details": [
+        "Editor-in-Chief and designer of the fifth edition (2025–26) of *Accent*, in her second year as ASU co-head.",
+        "In her letter she points to how the group grew that year, from the annual ramen function to Asian Sensations and the Cultural Fair."
+      ],
+      "impact": "Two consecutive editions kept a student-run space for Asian and Asian American voices on campus going, and growing.",
+      "related": [
+        "accent"
+      ],
+      "media": [
+        {
+          "src": "assets/media/accent05-cover.webp",
+          "alt": "Cover of Accent, Issue 05",
+          "caption": "Cover, Issue 05"
+        },
+        {
+          "src": "assets/media/accent05-masthead.webp",
+          "alt": "Masthead spread of Accent Issue 05 with Divya Bhatia as Editor-in-Chief",
+          "caption": "Masthead"
+        },
+        {
+          "src": "assets/media/accent05-letter.webp",
+          "alt": "Letter from the heads spread in Accent Issue 05",
+          "caption": "Letter from the heads"
+        }
+      ],
+      "documents": [
+        "accent-05"
+      ]
+    },
+    {
+      "symbol": "Ub",
+      "name": "“Unboxed” (poem)",
+      "year": "2025",
+      "group": "publication",
+      "detail": "Original poem by Divya, published in Accent, Issue 04 (2024–25).",
+      "details": [
+        "An original poem published in *Accent*, Issue 04 (2024–25). It pushes back on the boxes people put her in, drawing on Bhangra, chai steeped with memory, and the meaning of her name.",
+        "It closes: “Call me what you want, I’ll still rise, / Feet to the drum, fire in my eyes.”"
+      ],
+      "impact": "The same question that runs through her history research, how categories get assigned to people, told in the first person.",
+      "related": [
+        "accent"
+      ],
+      "media": [
+        {
+          "src": "assets/media/unboxed.webp",
+          "alt": "The poem “Unboxed” by Divya Bhatia as printed in Accent",
+          "caption": "“Unboxed,” as published"
+        }
+      ],
+      "documents": [
+        "accent-04"
+      ]
+    },
+    {
+      "symbol": "Kw",
+      "isotope": "×4",
+      "name": "Kode With Klossy",
+      "year": "2023–26",
+      "group": "program",
+      "detail": "Four summers: Website Development (2023), Mobile App Development (2024), Data Science (2025), AI & Machine Learning (2026).",
+      "details": [
+        "Four summers in Kode With Klossy, each with a different curriculum and a project aimed at a real audience.",
+        "2023, Website Development: *Period 5*, a menstrual-health education site. 2024, Mobile App Development: *Hearing Hand*, an ASL and Deaf-culture app in SwiftUI. 2025, Data Science. 2026, AI & Machine Learning: *NorthStar*, a deployed chatbot that recommends real places using live data."
+      ],
+      "impact": "From HTML to a deployed AI app in four years, always built for someone: young people learning about their bodies, ASL learners, travelers in an unfamiliar city.",
+      "related": [
+        "period5",
+        "hearinghand",
+        "northstar"
+      ],
+      "media": [
+        {
+          "src": "assets/media/kwk-2023.webp",
+          "alt": "Kode With Klossy certificate: Website Development, 2023",
+          "caption": "2023 · Website Development"
+        },
+        {
+          "src": "assets/media/kwk-2024.webp",
+          "alt": "Kode With Klossy certificate: Mobile App Development, 2024",
+          "caption": "2024 · Mobile App Development"
+        },
+        {
+          "src": "assets/media/kwk-2025.webp",
+          "alt": "Kode With Klossy certificate: Data Science, 2025",
+          "caption": "2025 · Data Science"
+        },
+        {
+          "src": "assets/media/kwk-2026.webp",
+          "alt": "Kode With Klossy certificate: Artificial Intelligence & Machine Learning, 2026",
+          "caption": "2026 · AI & Machine Learning"
+        }
+      ]
+    },
+    {
+      "symbol": "Gw",
+      "name": "Girls Who Code",
+      "year": "2024",
+      "group": "program",
+      "detail": "Completed the 2024 Summer Immersion Program.",
+      "details": [
+        "Completed the 2024 Girls Who Code Summer Immersion Program, in the same summer as Kode With Klossy’s mobile-app curriculum."
+      ],
+      "impact": "A second community of young women in computing, and more practice turning ideas into working code.",
+      "related": [],
+      "media": [
+        {
+          "src": "assets/media/gwc-2024.webp",
+          "alt": "Girls Who Code certificate of completion, 2024 Summer Immersion Program",
+          "caption": "Certificate of completion, 2024"
+        }
+      ]
+    },
+    {
+      "symbol": "Mt",
+      "name": "Math Team",
+      "year": "2024",
+      "group": "recognition",
+      "detail": "St. Andrew's Team A placed 1st at the 2024 regional math competition.",
+      "details": [
+        "Competed in local math tournaments with St. Andrew’s Math Team. Team A placed 1st at the 2024 regional competition."
+      ],
+      "impact": "Solving hard problems under time pressure, as a team.",
+      "related": [],
+      "media": []
+    },
+    {
+      "symbol": "Mu",
+      "name": "Model UN",
+      "year": "2023–",
+      "group": "recognition",
+      "detail": "Vice Chair → Chair → Crisis Director. Chaired a 15-delegate committee and attended NAIMUN twice.",
+      "details": [
+        "Model United Nations since 2023, moving from delegate to Vice Chair, Chair and Crisis Director.",
+        "Attended NAIMUN (the North American Invitational Model United Nations) twice, chaired a 15-delegate committee, and wrote the SASMUN VIII Partition of India crisis guide."
+      ],
+      "impact": "Running a committee means making room for every delegate’s voice while keeping a crisis moving.",
+      "related": [
+        "sasmun"
+      ],
+      "media": [
+        {
+          "src": "assets/media/sasmun-guide.webp",
+          "alt": "Title and table of contents of the SASMUN VIII background guide on the Partition of India",
+          "caption": "The crisis guide she wrote as chair"
+        }
+      ],
+      "documents": [
+        "sasmun-guide"
+      ]
+    },
+    {
+      "symbol": "Cq",
+      "name": "Curiosity Quest Night",
+      "year": "2024",
+      "group": "recognition",
+      "detail": "Won Curiosity Quest Night (May 2024) with Josephine, for the cattails field study.",
+      "details": [
+        "With Josephine, spent April and May 2024 asking why cattails ring the retention pond but never reach its middle.",
+        "Depth readings (80–106 cm) and a peer bathymetric map ruled out depth. So they built a probe, after rejecting prototypes that were too flexible or too blunt, and measured the force needed to push into the pond bottom across four zones. The project won Curiosity Quest Night in May 2024."
+      ],
+      "impact": "Retention ponds exist to slow and clean stormwater. Knowing where wetland plants can take root helps the people who design and care for them.",
+      "related": [
+        "cattails"
+      ],
+      "media": [
+        {
+          "src": "assets/media/cattails-probe.webp",
+          "alt": "Holding the force probe upright in the shallow water of the pond",
+          "caption": "Taking a force reading in the pond"
+        },
+        {
+          "src": "assets/media/cattails-force-map.webp",
+          "alt": "Map of the pond with force readings coded green under 40 newtons, yellow 40 to 50, red 50 or more",
+          "caption": "Force readings around the pond"
+        },
+        {
+          "src": "assets/media/cattails-prototypes.webp",
+          "alt": "Probe prototypes laid out on the floor",
+          "caption": "Probe prototypes"
+        },
+        {
+          "src": "assets/media/cattails-pond.webp",
+          "alt": "The retention pond with cattails along the shore",
+          "caption": "The retention pond"
+        },
+        {
+          "src": "assets/media/cattails-bottom.webp",
+          "alt": "Close view of the soft, muddy pond bottom near the cattails",
+          "caption": "Soft bottom near the cattails"
+        },
+        {
+          "src": "assets/media/cattails-notes.webp",
+          "alt": "Handwritten field notes and sketch map of the pond",
+          "caption": "Field notes"
+        }
+      ]
+    }
+  ],
+  "curiosities": {
+    "questions": [
+      {
+        "q": "Why are the near-shore zones of the pond soft in the first place?",
+        "from": "cattails"
+      },
+      {
+        "q": "How do you verify a chemical change in water that never stops moving?",
+        "from": "oae"
+      },
+      {
+        "q": "Can carbon removal get cheap enough to matter without cutting corners on monitoring?",
+        "from": "oae"
+      },
+      {
+        "q": "When a census counts people, when does counting become dividing?",
+        "from": "partition"
+      },
+      {
+        "q": "What gets lost when a language is taught without its culture?",
+        "from": "hearinghand"
+      }
+    ],
+    "pickASide": [
+      {
+        "prompt": "Without the greenhouse effect, Earth's average surface temperature would…",
+        "options": [
+          "drop to about −18 °C (−0.4 °F)",
+          "stay steady at about 15 °C (59 °F)"
+        ],
+        "answer": 0,
+        "why": "Greenhouse gases are why Earth averages about 15 °C instead of about −18 °C.",
+        "source": "NASA"
+      },
+      {
+        "prompt": "Greenhouse gases warm the planet by…",
+        "options": [
+          "trapping sunlight inside the atmosphere, like a glass greenhouse",
+          "absorbing the heat Earth radiates back toward space"
+        ],
+        "answer": 1,
+        "why": "Sunlight mostly passes through. The gases absorb outgoing infrared heat, so the glass-greenhouse picture is misleading.",
+        "source": "NCSE"
+      },
+      {
+        "prompt": "The most abundant greenhouse gas in Earth's atmosphere is…",
+        "options": [
+          "carbon dioxide",
+          "water vapor"
+        ],
+        "answer": 1,
+        "why": "Water vapor is the most abundant, and it amplifies warming started by CO₂.",
+        "source": "NASA"
+      },
+      {
+        "prompt": "Methane traps ~80× more heat than CO₂ over 20 years. CO₂ is still the bigger long-term threat because…",
+        "options": [
+          "methane breaks down in roughly 7–12 years, while CO₂ accumulates for generations",
+          "CO₂ absorbs high-energy sunlight that methane can't"
+        ],
+        "answer": 0,
+        "why": "Methane reacts with OH radicals and breaks down within about a decade, while CO₂ keeps piling up.",
+        "source": "NASA"
+      }
+    ],
+    "personal": [
+      "Outside class: walks down to the T-dock, or scooter rides with my little sibling to the paddle courts.",
+      "Reading *Beloved* and *Things We Lost in the Fire*, a collection of gothic short stories I absolutely love. Listening to podcasts from survivors of the Vietnam War for my World at War project.",
+      "I almost hyperfixate on being organized. I basically live inside my planner.",
+      "I remember the little details people don't realize I noticed.",
+      "When I commit to something, I give it everything, whatever it is."
+    ]
+  },
+  "resume": {
+    "education": [
+      {
+        "org": "St. Andrew's School, Delaware",
+        "detail": "Class of 2027",
+        "gpa": "92/100",
+        "showGpa": false,
+        "coursework": [
+          "AS Biology",
+          "AS Chemistry",
+          "AS Calculus BC",
+          "AS English IV",
+          "Cellular Biology",
+          "AS Microbiology",
+          "AS World at War",
+          "AS Modern Middle East"
+        ]
+      }
+    ],
+    "research": [
+      {
+        "title": "Ocean Alkalinity Enhancement: research synthesis",
+        "detail": "Harvard Pre-College, July 2026, with Una. SCCUR 2026 abstract submitted; IYRC Winter 2026 in progress."
+      },
+      {
+        "title": "The Planned Partition: Caste and Religion in a Divided Punjab, 1858–1947",
+        "detail": "AS Research Seminar paper, May 2026."
+      },
+      {
+        "title": "Cattails field study",
+        "detail": "Won Curiosity Quest Night, May 2024, with Josephine."
+      }
+    ],
+    "activities": [
+      {
+        "role": "Harvard Pre-College Program, Chemistry Track",
+        "category": "Academic",
+        "text": "Completed a two-week chemistry program. Researching ocean carbon removal and Ebb Carbon clarified my interest in chemistry, climate and ocean science."
+      },
+      {
+        "role": "Kode With Klossy & Girls Who Code",
+        "category": "Computer / Technology",
+        "text": "Across four summers, built Period 5, Hearing Hand and NorthStar, progressing from web development to AI/ML."
+      },
+      {
+        "role": "Asian Student Union, Co-Head & Accent Editor-in-Chief",
+        "category": "Cultural",
+        "text": "Co-led for three years. Designed two editions of the art and literary magazine and raised $500 for relief efforts after anti-Asian violence."
+      },
+      {
+        "role": "Student Diversity Committee, Senior Leader & Co-Head",
+        "category": "Community Service",
+        "text": "Planned speakers, films and cultural fairs with the Dean of Inclusion. Attended three DEI conferences and co-facilitated a book censorship workshop."
+      },
+      {
+        "role": "Model United Nations",
+        "category": "Debate / Speech",
+        "text": "Rose from Vice Chair to Chair to Crisis Director. Wrote a Partition of India background guide, chaired a 15-delegate committee and attended NAIMUN twice."
+      },
+      {
+        "role": "Religion Teaching Assistant",
+        "category": "Academic",
+        "text": "TA for Religious Thought, helping students develop and edit essays with feedback on argument, organization and ideas."
+      },
+      {
+        "role": "Youth Mentoring",
+        "category": "Community Service",
+        "text": "Mentored 20–25 elementary students with special needs for three years through recess and activities."
+      },
+      {
+        "role": "Senior Cardinal Ambassador & Admissions Intern",
+        "category": "School Spirit",
+        "text": "Led 20+ campus tours for prospective students and teaching candidates, assisted at admissions events and led virtual tours."
+      },
+      {
+        "role": "Yearbook Club, Leader",
+        "category": "Journalism / Publication",
+        "text": "Leads 25–30 students: teaches page design, assigns and reviews pages, and coordinates with every department."
+      },
+      {
+        "role": "Math Team",
+        "category": "Academic",
+        "text": "Competed in local math tournaments. Team A placed 1st regionally in 2024."
+      }
+    ],
+    "skills": [
+      "Swift / SwiftUI",
+      "Python (pandas, Gradio)",
+      "Web development (KWK 2023)",
+      "Data science (KWK 2025)",
+      "AI / ML (KWK 2026)",
+      "Editorial & page design"
+    ]
+  },
+  "contact": {
+    "headline": "Let's compare questions.",
+    "email": "divya.bhatia1130@gmail.com",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/divya-bhatia1130/"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/DivyaB1130"
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "oae-deck",
+      "kind": "Slides",
+      "title": "Ocean Alkalinity Enhancement: final presentation",
+      "file": "assets/docs/ocean-alkalinity-enhancement.pdf",
+      "pages": 24,
+      "by": "Una & Divya"
+    },
+    {
+      "id": "greenhouse-deck",
+      "kind": "Slides",
+      "title": "The Greenhouse Effect: Pick a Side",
+      "file": "assets/docs/greenhouse-effect-pick-a-side.pdf",
+      "pages": 27,
+      "by": "Divya & Camila"
+    },
+    {
+      "id": "partition-paper",
+      "kind": "Research paper",
+      "title": "The Planned Partition: Caste and Religion in a Divided Punjab, 1858–1947",
+      "file": "assets/docs/planned-partition.pdf",
+      "pages": 21,
+      "by": "Divya Bhatia",
+      "note": "Three sentences naming family members’ castes and birthplaces are redacted for privacy."
+    },
+    {
+      "id": "sasmun-guide",
+      "kind": "Background guide",
+      "title": "A Race Against Time: The Partition of India (1947)",
+      "file": "assets/docs/sasmun-partition-guide.pdf",
+      "pages": 4,
+      "by": "Divya Bhatia, Chair",
+      "note": "Contact details removed."
+    },
+    {
+      "id": "accent-04",
+      "kind": "Magazine",
+      "title": "Accent, Issue 04 (2024–25)",
+      "file": "assets/docs/accent-issue-04.pdf",
+      "pages": 60,
+      "by": "Asian Student Union · Divya Bhatia, Editor-in-Chief"
+    },
+    {
+      "id": "accent-05",
+      "kind": "Magazine",
+      "title": "Accent, Issue 05 (2025–26)",
+      "file": "assets/docs/accent-issue-05.pdf",
+      "pages": 25,
+      "by": "Asian Student Union · Divya Bhatia, Editor-in-Chief"
+    }
+  ]
+}
