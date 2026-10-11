@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Divya Bhatia · Equilibrium</title>
+  <meta name="description" content="Divya Bhatia studies how chemistry, biology and engineering meet the communities they serve, from ocean alkalinity enhancement to the history of Partition.">
+  <meta name="theme-color" content="#f6e3dc" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1c1214" media="(prefers-color-scheme: dark)">
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Divya Bhatia · Equilibrium">
+  <meta property="og:description" content="Chemistry, biology, engineering and community, as one reaction.">
+  <meta property="og:image" content="https://divyab1130.github.io/assets/og-image.png">
+  <meta property="og:url" content="https://divyab1130.github.io/">
+  <link rel="canonical" href="https://divyab1130.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Fonts: Fraunces (display/body serif) + IBM Plex Mono (data labels), self-hosted latin subsets (SIL OFL) -->
+  <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/plexmono-400.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="modulepreload" href="js/main.js">
+  <!-- Apply saved/system theme before first paint to avoid a flash -->
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Fixed pH gauge: shows the current "reading" and works like a scrollbar.
+       Drag the marker or click the track to move; the labels jump to sections. -->
+  <nav class="gauge" aria-label="Sections">
+    <div class="gauge__track" aria-hidden="true"></div>
+    <div class="gauge__marker" role="slider" tabindex="0" aria-label="Page position (pH scale)"
+         aria-orientation="vertical" aria-valuemin="0" aria-valuemax="14" aria-valuenow="1"></div>
+    <ol class="gauge__stops"></ol>
+    <p class="gauge__reading" aria-hidden="true">pH <span data-ph-readout>1.0</span></p>
+    <p class="gauge__hint mono" aria-hidden="true">drag or click</p>
+  </nav>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Divya Bhatia, back to top">
+      <svg viewBox="0 0 32 32" aria-hidden="true" class="brand__mark"><path d="M16 3c5 7 9 11.5 9 17a9 9 0 0 1-18 0c0-5.5 4-10 9-17z"/></svg>
+      <span>Divya Bhatia</span>
+    </a>
+    <button class="nav-toggle mono" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav class="topnav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#notebook">Projects</a></li>
+        <li><a href="#archive">Community &amp; History</a></li>
+        <li><a href="#elements">Achievements</a></li>
+        <li><a href="#curiosities">Interests</a></li>
+        <li><a href="#resume">Résumé</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch colour theme" data-theme-toggle>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 7a5 5 0 0 0 0 10z" class="theme-toggle__half"/></svg>
+      <span class="theme-toggle__label mono" data-theme-label>Dark mode</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- 1 · HERO + REACTION NETWORK (acidic end of the scale) -->
+    <section id="top" class="hero" data-ph="0.8" data-label="Overview" aria-labelledby="hero-name">
+      <div class="hero__text">
+        <div class="portrait" data-portrait aria-hidden="true"></div>
+        <p class="eyebrow" data-person="interests">Chemical &amp; biological engineering</p>
+        <h1 id="hero-name" class="hero__name" data-person="name">Divya Bhatia</h1>
+        <p class="hero__thesis" data-person="thesis">I study how matter moves: carbon into seawater, roots into mud, ideas into communities. And I study who is changed when it does.</p>
+        <p class="hero__lede" data-person="lede">A high-school researcher working where chemistry, biology and engineering meet the people they affect. Scroll down: like an ocean receiving alkalinity, the page shifts as each piece is added.</p>
+        <p class="hero__meta mono" data-person="school">St. Andrew's School, Delaware · Class of 2027</p>
+
+        <!-- Burette stopcock: flips Bench (light) ⇄ Night lab (dark) with a reveal from the tap -->
+        <div class="stopcock">
+          <button class="stopcock__btn" type="button" data-theme-toggle aria-pressed="false">
+            <svg viewBox="0 0 120 150" aria-hidden="true">
+              <rect class="stopcock__glass" x="48" y="0" width="24" height="70" rx="3"/>
+              <rect class="stopcock__liquid" x="52" y="18" width="16" height="52"/>
+              <g class="stopcock__ticks"><path d="M48 14h8M48 26h5M48 38h8M48 50h5M48 62h8"/></g>
+              <circle class="stopcock__body" cx="60" cy="86" r="16"/>
+              <g class="stopcock__handle"><rect x="18" y="80" width="84" height="12" rx="6"/></g>
+              <path class="stopcock__tip" d="M54 102h12l-3 30h-6z"/>
+              <path class="stopcock__drop" d="M60 136c3 4 5 6.5 5 9a5 5 0 0 1-10 0c0-2.5 2-5 5-9z"/>
+            </svg>
+            <span class="stopcock__state mono" data-stopcock-state>Bench</span>
+          </button>
+          <p class="stopcock__note" aria-hidden="true">turn the tap
+            <svg viewBox="0 0 60 40"><path d="M56 6C40 4 18 10 8 30m0 0l-2-11m2 11l10-5"/></svg>
+          </p>
+        </div>
+      </div>
+
+      <figure class="network" aria-labelledby="network-caption">
+        <figcaption id="network-caption" class="network__caption mono">
+          <span>Reactants → products.</span> <span class="only-pointer">Four fields on the outside, the projects they combine into on the inside. Hover or focus a project to see its bonds; open it for the full notebook entry.</span><span class="only-touch">Each project, tagged with the fields it bonds to. Tap one for its notebook entry.</span>
+        </figcaption>
+        <svg class="network__svg" viewBox="0 0 1000 640" role="group" aria-label="Reaction network of research domains and projects"></svg>
+        <ul class="network__list" aria-label="Projects and the domains they draw on"></ul>
+      </figure>
+    </section>
+
+    <!-- 2 · LAB NOTEBOOK -->
+    <section id="notebook" class="notebook" data-ph="4.5" data-label="Projects" aria-labelledby="notebook-title">
+      <header class="section-head">
+        <p class="section-head__ph mono">Projects · pH 4–6</p>
+        <h2 id="notebook-title">Lab notebook</h2>
+        <p class="section-head__dek">Every entry follows the same four lines: the question, how it was tested, what came back, and why it matters to people.</p>
+      </header>
+      <div class="notebook__entries"></div>
+    </section>
+
+    <!-- 3 · ARCHIVE: community & history -->
+    <section id="archive" class="archive" data-ph="7" data-label="Community" aria-labelledby="archive-title">
+      <header class="section-head">
+        <p class="section-head__ph mono">Community &amp; History · pH 7</p>
+        <h2 id="archive-title">The archive</h2>
+        <p class="section-head__dek" data-archive-intro></p>
+      </header>
+      <div class="archive__paper">
+        <div class="archive__lane">
+          <h3 class="stamp">History she studies</h3>
+          <ol class="ledger" data-archive="history"></ol>
+        </div>
+        <div class="archive__lane">
+          <h3 class="stamp">Community she builds</h3>
+          <ol class="ledger" data-archive="community"></ol>
+        </div>
+        <p class="archive__xref mono">Cross-reference → <a href="#entry-partition">The Planned Partition</a> · <a href="#entry-sasmun">SASMUN VIII</a> · <a href="#entry-accent">Accent</a></p>
+      </div>
+    </section>
+
+    <!-- 4 · TABLE OF ELEMENTS: programs, publications, recognition -->
+    <section id="elements" class="elements" data-ph="9" data-label="Achievements" aria-labelledby="elements-title">
+      <header class="section-head">
+        <p class="section-head__ph mono">Achievements · pH 8–10</p>
+        <h2 id="elements-title">Table of elements</h2>
+        <p class="section-head__dek">Programs, publications and recognition. Select a tile to read its entry.</p>
+      </header>
+      <ul class="elements__legend mono" aria-label="Legend">
+        <li data-group="program">Program</li>
+        <li data-group="publication">Publication</li>
+        <li data-group="recognition">Recognition</li>
+      </ul>
+      <div class="elements__grid" role="list"></div>
+      <div class="elements__detail" aria-live="polite"></div>
+    </section>
+
+    <!-- 5 · CURIOSITIES -->
+    <section id="curiosities" class="curiosities" data-ph="11" data-label="Interests" aria-labelledby="curiosities-title">
+      <header class="section-head">
+        <p class="section-head__ph mono">Interests · pH 10–12</p>
+        <h2 id="curiosities-title">Curiosities</h2>
+        <p class="section-head__dek">Open questions, plus two small experiments you can run right here.</p>
+      </header>
+      <div class="curiosities__grid">
+        <div class="curio curio--questions">
+          <h3 class="curio__title">Questions I'm chasing</h3>
+          <ol class="questions"></ol>
+        </div>
+        <div class="curio curio--titration" data-lazy="titration">
+          <h3 class="curio__title">Add alkalinity, drop by drop</h3>
+          <p class="curio__note">Loading the experiment…</p>
+        </div>
+        <div class="curio curio--quiz" data-lazy="quiz">
+          <h3 class="curio__title">Pick a side</h3>
+          <p class="curio__note">Loading the quiz…</p>
+        </div>
+        <div class="curio curio--personal">
+          <h3 class="curio__title">Off the bench</h3>
+          <ul class="personal"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · RÉSUMÉ (prints on its own as a PDF) -->
+    <section id="resume" class="resume" data-ph="12.3" data-label="Résumé" aria-labelledby="resume-title">
+      <header class="section-head">
+        <p class="section-head__ph mono">Résumé · pH 12</p>
+        <h2 id="resume-title">Résumé</h2>
+        <p class="section-head__dek">The whole record on one page. <button class="btn btn--inline" type="button" data-print>Save as PDF</button></p>
+      </header>
+      <div class="resume__sheet"></div>
+    </section>
+  </main>
+
+  <!-- 7 · CONTACT (most alkaline) -->
+  <footer id="contact" class="contact" data-ph="13.5" data-label="Contact" aria-labelledby="contact-title">
+    <h2 id="contact-title" class="contact__headline"></h2>
+    <div class="contact__body"></div>
+    <p class="contact__colophon mono">Hand-built with HTML, CSS and a little JavaScript. Colours follow a universal pH indicator. No trackers.</p>
+  </footer>
+
+  <!-- Project detail dialog (opened from the network) -->
+  <dialog class="project-dialog" aria-labelledby="dialog-title">
+    <div class="project-dialog__inner"></div>
+    <form method="dialog"><button class="project-dialog__close" aria-label="Close">×</button></form>
+  </dialog>
+
+  <!-- Document reader: slides, paper, guide, magazines (js/reader.js) -->
+  <dialog class="reader" aria-labelledby="reader-title">
+    <header class="reader__bar">
+      <div class="reader__titles">
+        <p class="reader__kind mono" data-reader-kind></p>
+        <h2 id="reader-title" class="reader__title" data-reader-title></h2>
+      </div>
+      <div class="reader__controls mono">
+        <button type="button" data-reader="prev" aria-label="Previous page">‹</button>
+        <span data-reader-page aria-live="polite"></span>
+        <button type="button" data-reader="next" aria-label="Next page">›</button>
+        <span class="reader__sep" aria-hidden="true"></span>
+        <button type="button" data-reader="zoom-out" aria-label="Zoom out">−</button>
+        <span data-reader-zoom-label>100%</span>
+        <button type="button" data-reader="zoom-in" aria-label="Zoom in">+</button>
+        <a class="reader__download" data-reader-download href="#">Download PDF</a>
+        <form method="dialog"><button class="reader__close" aria-label="Close reader">×</button></form>
+      </div>
+    </header>
+    <p class="reader__note mono" data-reader-note></p>
+    <div class="reader__pages" tabindex="0" aria-label="Document pages"></div>
+  </dialog>
+
+  <!-- Full-size image viewer for the Table of elements -->
+  <dialog class="lightbox" aria-label="Image viewer">
+    <figure class="lightbox__figure">
+      <img alt="">
+      <figcaption><span class="lightbox__caption"></span> <span class="lightbox__count mono"></span></figcaption>
+    </figure>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" data-step="-1" aria-label="Previous image">‹</button>
+    <button type="button" class="lightbox__nav lightbox__nav--next" data-step="1" aria-label="Next image">›</button>
+    <form method="dialog"><button class="project-dialog__close lightbox__close" aria-label="Close">×</button></form>
+  </dialog>
+
+  <noscript>
+    <div class="noscript">
+      <h2>Divya Bhatia</h2>
+      <p>High-school researcher in chemistry, biology, engineering and community history: ocean alkalinity enhancement (research synthesis, Harvard Pre-College 2026), a field study of pond cattails, the Hearing Hand ASL app, the NorthStar food recommender, and a research paper on the Partition of Punjab. This site needs JavaScript for its interactive parts.</p>
+    </div>
+  </noscript>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
