@@ -55,6 +55,17 @@ async function main() {
   });
   document.documentElement.classList.add('is-ready');
   apply(true);
+  // Deep links (e.g. #entry-oae from Divya's GitHub profile) point at entries that only
+  // exist after rendering, so jump to them once the page is built.
+  const target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (target) {
+    // Re-align while lazy demos and fonts settle above it; stop as soon as the reader scrolls.
+    let userMoved = false;
+    const stop = () => { userMoved = true; };
+    ['wheel', 'touchstart', 'keydown'].forEach((ev) => addEventListener(ev, stop, { once: true, passive: true }));
+    const snap = () => { if (!userMoved) target.scrollIntoView({ behavior: 'instant', block: 'start' }); };
+    [0, 300, 900, 1800].forEach((ms) => setTimeout(snap, ms));
+  }
 }
 
 // Mobile "Menu" button: toggles the section links; closes on choice, Escape or outside click.
