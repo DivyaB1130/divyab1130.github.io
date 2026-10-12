@@ -146,6 +146,10 @@
         {
           "label": "Try it on Hugging Face",
           "href": "https://huggingface.co/spaces/kode-with-klossy/4.3-groupC4-capstone"
+        },
+        {
+          "label": "Code on GitHub",
+          "href": "https://github.com/DivyaB1130/northstar"
         }
       ]
     },
@@ -166,7 +170,12 @@
       "method": "Designed and built a SwiftUI app in Xcode with the team. It has lessons on the alphabet and basic words, two quiz tracks (fingerspelling and everyday words), and a motivation system of streaks, gems and hearts. Deaf culture lessons on history, values and cultural behaviors sit alongside the vocabulary.",
       "result": "A working iOS prototype in which culture lessons are part of the main path, not an appendix.",
       "impact": "It treats Deaf culture as a culture, so learners meet its history, values and etiquette in the same place they learn the alphabet.",
-      "links": []
+      "links": [
+        {
+          "label": "Code on GitHub",
+          "href": "https://github.com/DivyaB1130/hearing-hand"
+        }
+      ]
     },
     {
       "id": "period5",
