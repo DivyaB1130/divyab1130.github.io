@@ -48,8 +48,8 @@
       "short": "Ocean alkalinity",
       "kicker": "Research synthesis",
       "date": "July 2026",
-      "setting": "Harvard Pre-College Program · The Chemistry of a Human Earth",
-      "collaborators": "with Una · course instructor Ruth Tweedy",
+      "setting": "Research at Harvard · Summer 2026",
+      "collaborators": "with Una · guided by Ruth Tweedy, Harvard doctoral candidate",
       "domains": [
         "chem",
         "eng",
@@ -105,7 +105,7 @@
       "short": "Pick a Side",
       "kicker": "Interactive lesson",
       "date": "July 2026",
-      "setting": "Harvard Pre-College Program · The Chemistry of a Human Earth",
+      "setting": "Research at Harvard · Summer 2026",
       "collaborators": "with Camila",
       "domains": [
         "chem",
@@ -327,12 +327,12 @@
   "elements": [
     {
       "symbol": "Hv",
-      "name": "Harvard Pre-College",
+      "name": "Research at Harvard",
       "year": "2026",
       "group": "program",
-      "detail": "Chemistry track: The Chemistry of a Human Earth (CHEM P-13010), a two-week course on pollution, climate and the chemistry of sustainable solutions.",
+      "detail": "Summer 2026 chemistry research at Harvard, guided by Ruth Tweedy, a Harvard doctoral candidate.",
       "details": [
-        "A two-week college-level course (CHEM P-13010, July 20–31, 2026) that builds from first principles of chemistry to the largest environmental questions of the day: ocean acidification, carbon dioxide release, microplastics, and the chemistry of sustainable solutions. Each class applied chemistry to a different real-world case study.",
+        "Chemistry research at Harvard in July 2026, guided by Ruth Tweedy, a Harvard doctoral candidate. The work built from first principles of chemistry toward some of the largest environmental questions of the day: ocean acidification, carbon dioxide removal, and the chemistry of sustainable solutions.",
         "Two projects came out of it: a final research synthesis on ocean alkalinity enhancement with Una, and *Pick a Side*, an interactive greenhouse-effect lesson with Camila."
       ],
       "impact": "Researching ocean carbon removal and the company Ebb Carbon turned a general interest in chemistry into a specific direction: climate, ocean science, and the chemistry of carbon removal.",
@@ -816,7 +816,7 @@
     "research": [
       {
         "title": "Ocean Alkalinity Enhancement: research synthesis",
-        "detail": "Harvard Pre-College, July 2026, with Una. Accepted for presentation at SCCUR 2026 (San Diego State University, November 21, 2026); IYRC Winter 2026 in progress."
+        "detail": "Research at Harvard, July 2026, with Una, guided by Ruth Tweedy (Harvard doctoral candidate). Accepted for presentation at SCCUR 2026 (San Diego State University, November 21, 2026); IYRC Winter 2026 in progress."
       },
       {
         "title": "The Planned Partition: Caste and Religion in a Divided Punjab, 1858–1947",
@@ -829,9 +829,9 @@
     ],
     "activities": [
       {
-        "role": "Harvard Pre-College Program, Chemistry Track",
+        "role": "Research at Harvard, Chemistry",
         "category": "Academic",
-        "text": "Completed a two-week chemistry program. Researching ocean carbon removal and Ebb Carbon clarified my interest in chemistry, climate and ocean science."
+        "text": "Summer 2026 chemistry research guided by a Harvard doctoral candidate. Researching ocean carbon removal and Ebb Carbon clarified my interest in chemistry, climate and ocean science."
       },
       {
         "role": "Kode With Klossy & Girls Who Code",
