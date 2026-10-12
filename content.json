@@ -58,7 +58,7 @@
       "status": [
         {
           "label": "SCCUR 2026",
-          "state": "abstract submitted"
+          "state": "accepted for presentation"
         },
         {
           "label": "IYRC Winter 2026",
@@ -367,13 +367,13 @@
       "name": "SCCUR 2026",
       "year": "2026",
       "group": "publication",
-      "status": "submitted",
-      "detail": "Abstract on ocean alkalinity enhancement (with Una) submitted to the Southern California Conferences for Undergraduate Research.",
+      "status": "accepted",
+      "detail": "Abstract accepted for presentation at the 2026 SCCUR Annual Conference, San Diego State University, November 21, 2026.",
       "details": [
-        "Abstract submitted to the Southern California Conferences for Undergraduate Research (SCCUR) 2026, based on the ocean alkalinity enhancement (OAE) synthesis with Una.",
+        "“Ocean Alkalinity Enhancement for Marine Carbon Removal: A Review of Carbonate Chemistry, Geological Analogues, and Barriers to Scale” was accepted for presentation at the Southern California Conferences for Undergraduate Research (SCCUR) 2026, held at San Diego State University on November 21, 2026. It is based on the ocean alkalinity enhancement (OAE) synthesis with Una.",
         "The work explains how adding alkalinity shifts seawater’s carbonate equilibrium so the ocean absorbs more CO₂. It also covers the first permitted field trials (Ebb Carbon and Woods Hole Oceanographic Institution) and why monitoring, reporting and verification is the field’s main bottleneck."
       ],
-      "impact": "Carbon removal only counts if it can be verified. The abstract centers that question for an undergraduate research audience. Status: submitted, decision pending.",
+      "impact": "Carbon removal only counts if it can be verified. The presentation brings that question to an undergraduate research audience.",
       "related": [
         "oae"
       ],
@@ -816,7 +816,7 @@
     "research": [
       {
         "title": "Ocean Alkalinity Enhancement: research synthesis",
-        "detail": "Harvard Pre-College, July 2026, with Una. SCCUR 2026 abstract submitted; IYRC Winter 2026 in progress."
+        "detail": "Harvard Pre-College, July 2026, with Una. Accepted for presentation at SCCUR 2026 (San Diego State University, November 21, 2026); IYRC Winter 2026 in progress."
       },
       {
         "title": "The Planned Partition: Caste and Religion in a Divided Punjab, 1858–1947",
